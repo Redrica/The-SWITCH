@@ -8,13 +8,16 @@
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
     "eslint": "^4.19.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.0",
+    "run-sequence": "^2.2.1",
     "stylelint": "^9.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run editorconfig && npm run stylelint",
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",
