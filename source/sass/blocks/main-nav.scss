@@ -1,0 +1,17 @@
+@import "../variables";
+@import "../mixins";
+
+.main-nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.main-nav__list {
+  margin-right: auto;
+  order: -1;
+}
+
+.main-nav__form {
+  margin-left: auto;
+}

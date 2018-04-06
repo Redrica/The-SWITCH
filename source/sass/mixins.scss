@@ -1,0 +1,22 @@
+@import "variables";
+
+@mixin wrapper {
+  width: $max-width;
+  margin: 0 auto;
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin text ($family, $size, $weight, $color) {
+  margin: 0;
+  padding: 0;
+  font-family: $family;
+  font-size: $size;
+  line-height: 1.2;
+  font-weight: $weight;
+  color: $color;
+}

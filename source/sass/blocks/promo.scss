@@ -1,0 +1,15 @@
+@import "../variables";
+@import "../mixins";
+
+.promo {
+  padding: 41px $column-gap 73px;
+  background-color: $white;
+}
+
+.promo__wrapper {
+  @include wrapper;
+}
+
+.promo__header {
+  margin-bottom: 70px;
+}

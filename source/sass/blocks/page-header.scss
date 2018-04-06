@@ -1,0 +1,43 @@
+@import "../variables";
+@import "../mixins";
+
+.page-header {
+  background-color: $white;
+}
+.page-header__wrapper {
+  @include wrapper;
+  display: flex;
+  flex-direction: column;
+  padding: 5px $side-padding 12px;
+  background-image: url("../../img/background-clip.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $milk-chocolate;
+}
+
+.page-header__title {
+  @include text($montserrat, 55px, 700, $white);
+  width: 100%;
+  margin-bottom: 25px;
+  padding: $side-padding;
+  text-align: center;
+}
+
+.page-header__nav {
+  order: -1;
+  margin-bottom: 230px;
+}
+
+.page-header__link {
+  @include text($proxima, 22px, 400, $white);
+  display: block;
+  margin: 0 auto 215px;
+  text-decoration: none;
+}
+
+.page-header__scroll {
+  @include text($proxima, 16px, 300, $black-almost);
+  margin: 0 auto;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+}

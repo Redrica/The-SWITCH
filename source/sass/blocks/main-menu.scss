@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../mixins";
+
+.main-menu {
+  @include list;
+  display: flex;
+}
+
+.main-menu__link {
+  @include text($proxima, 16px, 400, $white);
+  text-decoration: none;
+}

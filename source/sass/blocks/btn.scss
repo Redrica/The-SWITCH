@@ -1,0 +1,9 @@
+@import "../variables";
+@import "../mixins";
+
+.btn {
+  @include text($proxima, 16px, 400, $white);
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #54d154;
+}
