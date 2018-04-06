@@ -13,6 +13,16 @@
   flex-basis: 350px;
   margin: 0 $column-gap;
   padding: 0 35px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 142px;
+    height: 142px;
+    margin-bottom: 24px;
+    background-color: $mint-green;
+    border-radius: 30px;
+  }
 }
 
 .features__title {
@@ -22,9 +32,8 @@
 
 .features__description {
   @include text($montserrat, 15px, 300, $gray-middle);
+  width: 100%;
   margin-bottom: 25px;
   text-align: center;
 }
-
-
 

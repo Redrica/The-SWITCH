@@ -1,0 +1,18 @@
+@import "../variables";
+@import "../mixins";
+
+.picture-grid {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.picture-grid__item {
+  display: block;
+  margin: 29px $column-gap 0;
+  font-size: 0;
+}
+
+.picture-grid__image {
+  border-radius: 3px;
+}

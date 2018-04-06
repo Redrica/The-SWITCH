@@ -1,0 +1,38 @@
+@import "../variables";
+@import "../mixins";
+
+.portfolio {
+  padding: 41px 0 53px;
+  background-color: $green-light;
+}
+
+.portfolio__wrapper {
+  @include wrapper;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 $side-padding;
+}
+
+.portfolio__header {
+  margin-bottom: 59px;
+
+  & .section-header__title {
+    color: $dark-green;
+  }
+
+  & .section-header__subtitle {
+    color: $grass-green;
+  }
+}
+
+.portfolio__works {
+  margin-bottom: 56px;
+}
+
+.portfolio__btn {
+  font-size: 18px;
+  font-weight: 400;
+  padding-right: 40px;
+  background-color: $grass-green;
+}

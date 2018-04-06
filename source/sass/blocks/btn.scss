@@ -3,7 +3,21 @@
 
 .btn {
   @include text($proxima, 16px, 400, $white);
-  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   background-color: #54d154;
+
+  &--big {
+    padding: 13px 26px 10px;
+    text-transform: uppercase;
+    border-radius: 26px;
+  }
+
+  &--small {
+    font-weight: 700;
+    padding: 6px 20px;
+    border-radius: 15px;
+  }
 }

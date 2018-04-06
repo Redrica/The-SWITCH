@@ -1,0 +1,78 @@
+@import "../variables";
+@import "../mixins";
+
+.slider {
+  display: flex;
+  align-items: center;
+  max-width: 760px;
+}
+
+.slider__switch {
+  flex-shrink: 0;
+  width: 14px;
+  height: 22px;
+  padding: 0;
+  background: transparent url("../../img/icon-arrow.png") no-repeat;
+  border: none;
+
+
+  &:last-of-type {
+    transform: rotate(180deg);
+    order: 1;
+  }
+}
+
+.slider__list {
+  overflow: hidden;
+}
+.slider__container {
+  display: flex;
+  width: 300%;
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 730px;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__text {
+  @include text($proxima, 16px, 400, $gray-middle-dark);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.slider__author {
+  display: flex;
+  align-items: center;
+}
+
+.slider__author-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 6px;
+}
+
+.slider__author-avatar {
+  display: block;
+  background-color: white;
+  border: 2px solid $white-almost;
+  border-radius: 50%;
+}
+
+.slider__author-name {
+  @include text($proxima, 16px, 400, $gray-middle-dark);
+  font-style: normal;
+
+}
+
+.slider__author-info {
+  @include text($proxima, 16px, 700, $gray-light);
+  font-style: normal;
+
+
+}

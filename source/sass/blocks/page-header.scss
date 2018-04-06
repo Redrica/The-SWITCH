@@ -8,6 +8,7 @@
   @include wrapper;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 5px $side-padding 12px;
   background-image: url("../../img/background-clip.jpg");
   background-repeat: no-repeat;
@@ -24,20 +25,19 @@
 }
 
 .page-header__nav {
+  align-self: stretch;
   order: -1;
   margin-bottom: 230px;
 }
 
 .page-header__link {
-  @include text($proxima, 22px, 400, $white);
-  display: block;
   margin: 0 auto 215px;
-  text-decoration: none;
 }
 
 .page-header__scroll {
   @include text($proxima, 16px, 300, $black-almost);
   margin: 0 auto;
-  padding: 5px;
+  padding: 5px 32px 4px 11px;
   background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
 }
