@@ -1,0 +1,26 @@
+{
+  "name": "my_switch",
+  "version": "1.0.0",
+  "description": "The training project for my portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "npm": "^5.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "stylelint": "^9.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redrica/The-SWITCH.git"
+  },
+  "author": "Elizaveta Vinokurova aka EliVin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Redrica/The-SWITCH/issues"
+  },
+  "homepage": "https://github.com/Redrica/The-SWITCH#readme"
+}
