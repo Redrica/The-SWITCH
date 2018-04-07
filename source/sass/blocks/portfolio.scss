@@ -4,6 +4,10 @@
 .portfolio {
   padding: 41px 0 53px;
   background-color: $green-light;
+
+  & .section-header__title::after {
+    background-color: $dark-green;
+  }
 }
 
 .portfolio__wrapper {
@@ -35,4 +39,9 @@
   font-weight: 400;
   padding-right: 40px;
   background-color: $grass-green;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-green;
+  }
 }

@@ -4,7 +4,9 @@
 .picture-grid {
   @include list;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: -29px;
 }
 
 .picture-grid__item {

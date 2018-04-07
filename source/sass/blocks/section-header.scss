@@ -5,14 +5,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .section-header__title {
-  @include text($montserrat, 20.5px, 300, $gray-middle);
-  margin-bottom: 18px;
+  @include text($montserrat, 20.5px, 400, $gray-middle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //margin-bottom: 7px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 43px;
+    height: 2px;
+    margin: 7px 0 7px;
+    background-color: $gray-middle;
+  }
 }
 
 .section-header__subtitle {

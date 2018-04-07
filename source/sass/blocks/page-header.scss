@@ -2,7 +2,10 @@
 @import "../mixins";
 
 .page-header {
-  background-color: $white;
+  background-image: url("../../img/background-full.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $milk-chocolate;
 }
 .page-header__wrapper {
   @include wrapper;
@@ -10,10 +13,10 @@
   flex-direction: column;
   align-items: center;
   padding: 5px $side-padding 12px;
-  background-image: url("../../img/background-clip.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $milk-chocolate;
+  //background-image: url("../../img/background-clip.jpg");
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //background-color: $milk-chocolate;
 }
 
 .page-header__title {
@@ -22,6 +25,7 @@
   margin-bottom: 25px;
   padding: $side-padding;
   text-align: center;
+  text-shadow: 0 0 4px $milk-chocolate;
 }
 
 .page-header__nav {
