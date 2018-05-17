@@ -1,9 +1,10 @@
-@import "../variables";
-@import "../mixins";
+//@import "../variables";
+//@import "../mixins";
 
 .page-header {
   background-image: url("../../img/background-full.jpg");
   background-repeat: no-repeat;
+  background-position: center 70%;
   background-size: cover;
   background-color: $milk-chocolate;
 }

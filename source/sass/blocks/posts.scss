@@ -1,9 +1,29 @@
-@import "../variables";
-@import "../mixins";
-
 .posts {
-  flex-basis: 350px;
-  margin: 0 30px;
+  @include list;
 }
 
+.posts__image {
+  border-radius: 4px;
+}
+
+.posts__item {
+  @include flex(row, flex-start, center, nowrap);
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.posts__content {
+  margin-left: 7px;
+}
+
+.posts__link {
+  text-decoration: none;
+}
+
+.posts__title {
+  @include text($montserrat, 16px, 300, $gray-light);
+  margin-bottom: 4px;
+}
 

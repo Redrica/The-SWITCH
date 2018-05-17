@@ -1,6 +1,10 @@
 @import "variables";
 
 @mixin wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   width: $max-width;
   margin: 0 auto;
 }
@@ -11,7 +15,7 @@
   list-style: none;
 }
 
-@mixin text ($family, $size, $weight, $color) {
+@mixin text($family, $size, $weight, $color) {
   margin: 0;
   padding: 0;
   font-family: $family;
@@ -19,4 +23,12 @@
   line-height: 1.2;
   font-weight: $weight;
   color: $color;
+}
+
+@mixin flex($direction, $justify, $align, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
 }

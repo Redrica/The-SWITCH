@@ -1,24 +1,10 @@
-@import "../variables";
-@import "../mixins";
-
 .more {
   background-color: $gray-dark;
-
-  & .section-header__title {
-    font-size: 16px;
-    color: $gray-light;
-  }
-
-  & .section-header__title::after {
-    background-color: $gray-light;
-  }
 }
 
 .more__wrapper {
   @include wrapper;
-  display: flex;
-  padding: 30px $side-padding 32px;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 30px $column-gap 32px;
 }
-
-
-

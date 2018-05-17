@@ -1,0 +1,22 @@
+.tag {
+  @include text($montserrat, 12.6px, 300, $white);
+  padding: 3px 8px 1px 7px;
+  text-transform: uppercase;
+  border-radius: 3px;
+
+  &--yellow {
+    background: $yellow;
+  }
+
+  &--green {
+    background: $green-light;
+  }
+
+  &--orange {
+    background: $orange;
+  }
+
+  &--blue {
+    background: $blue;
+  }
+}

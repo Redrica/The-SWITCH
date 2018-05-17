@@ -1,5 +1,5 @@
-@import "../variables";
-@import "../mixins";
+//@import "../variables";
+//@import "../mixins";
 
 .logo-grid {
   @include list;
@@ -7,7 +7,6 @@
   justify-content: center;
   flex-wrap: wrap;
   flex-basis: 100%;
-  margin-bottom: 59px;
   padding: 0 80px;
 }
 

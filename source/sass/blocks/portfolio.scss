@@ -1,47 +1,51 @@
-@import "../variables";
-@import "../mixins";
-
 .portfolio {
-  padding: 41px 0 53px;
-  background-color: $green-light;
-
-  & .section-header__title::after {
-    background-color: $dark-green;
-  }
-}
-
-.portfolio__wrapper {
-  @include wrapper;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 $side-padding;
+  padding: 0 110px;
 }
 
-.portfolio__header {
-  margin-bottom: 59px;
+.portfolio__transition {
+  display: flex;
+  margin-bottom: 43px;
+}
 
-  & .section-header__title {
-    color: $dark-green;
+.portfolio__toggle {
+  @include text($proxima, 16px, 400, $grass-green);
+  padding: 6px 20px;
+  background-color: $white;
+  border: 1px solid $grass-green;
+  cursor: pointer;
+
+  &:first-child {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
   }
 
-  & .section-header__subtitle {
-    color: $grass-green;
+  &:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  &--active {
+    background-color: $grass-green;
+    color: $white;
   }
 }
 
-.portfolio__works {
-  margin-bottom: 56px;
+.portfolio__list {
+  @include list;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.portfolio__btn {
-  font-size: 18px;
-  font-weight: 400;
-  padding-right: 40px;
-  background-color: $grass-green;
+.portfolio__item {
+  display: block;
+  margin: $column-gap;
+  font-size: 0;
+}
 
-  &:hover,
-  &:focus {
-    background-color: $dark-green;
-  }
+.portfolio__image {
+  border-radius: 3px;
 }

@@ -1,0 +1,170 @@
+.section {
+  &--promo {
+    padding: 41px 0 73px;
+    background-color: $white;
+  }
+
+  &--portfolio {
+    padding: 41px 0 53px;
+    background-color: $green-light;
+  }
+
+  &--testimonials {
+    padding: 38px 0 61px;
+    background-color: $white;
+  }
+
+  &--clients {
+    padding: 35px 0 62px;
+    background-color: $white-almost;
+  }
+
+  &--team {
+    position: relative;
+    padding: 35px 0 25px;
+    background-color: $green-light;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      content: "";
+      width: 100%;
+      height: 92px;
+      background-color: $grass-green-light;
+    }
+  }
+
+  &--about {
+    @include flex(column, flex-start, center, nowrap);
+    flex-basis: (100% / 3);
+    //padding: 0 30px 0 $column-gap;
+  }
+
+  &--posts {
+    @include flex(column, flex-start, center, nowrap);
+    flex-basis: (100% / 3);
+    //padding: 0 45px;
+  }
+
+  &--contacts {
+    @include flex(column, flex-start, center, nowrap);
+    flex-basis: (100% / 3);
+    //padding: 0 $column-gap 0 43px;
+  }
+}
+
+.section__wrapper {
+  @include wrapper;
+}
+
+.section__header {
+  width: 100%;
+  text-align: center;
+}
+
+.section__title {
+  @include text($montserrat, 20.5px, 400, $gray-middle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 43px;
+    height: 2px;
+    margin: 7px 0 7px;
+    background-color: $gray-middle;
+  }
+
+  &--green {
+    color: $dark-green;
+
+    &::after {
+      background-color: $dark-green;
+    }
+  }
+
+  &--more {
+    margin-bottom: 22px;
+    font-size: 16px;
+    color: $gray-light;
+
+    &::after {
+      width: 30px;
+      margin: 2px 0 0;
+      background-color: $gray-light;
+    }
+  }
+}
+
+.section__subtitle {
+  @include text($montserrat, 15px, 300, $gray);
+  margin: 0;
+  padding: 0;
+
+  &--green {
+    color: $grass-green;
+  }
+
+  &--start {
+    font-family: $opensans;
+    font-size: 16px;
+  }
+}
+
+.section__features {
+  margin-top: 70px;
+}
+
+.section__portfolio {
+  margin: 59px 0 41px;
+}
+
+.section__testimonials {
+  margin-top: 68px;
+}
+
+.section__clients {
+  margin: 63px 0 59px;
+}
+
+.section__team {
+  margin: 51px 0 90px;
+}
+
+.section__about {
+  @include text($proxima, 16px, 400, $gray-light);
+  width: 100%;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.section__contacts {
+  @include flex(column, flex-start, center, nowrap);
+  margin-bottom: 25px;
+}
+
+.section__contacts-text {
+  @include text($proxima, 14px, 300, $gray-light);
+  text-align: center;
+}
+
+.section__contacts-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section__btn {
+  font-size: 18px;
+  font-weight: 400;
+  padding-right: 40px;
+  background-color: $grass-green;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-green;
+  }
+}

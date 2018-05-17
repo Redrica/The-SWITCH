@@ -1,0 +1,42 @@
+.contacts-form {
+  @include flex(column, flex-start, stretch, nowrap);
+  width: 322px;
+}
+
+.contacts-form__item {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+
+  &:first-child {
+    & .contacts-form__input {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+}
+
+.contacts-form__label {
+  @include text($proxima, 16px, 400, $gray-middle);
+  position: absolute;
+  top: 6px;
+  left: 13px;
+}
+
+.contacts-form__input {
+  width: 100%;
+  margin-bottom: 2px;
+  padding: 8px 13px 6px;
+  background-color: $gray-middle-dark;
+  border: none;
+  resize: none;
+}
+
+.contacts-form__submit {
+  padding: 8px 0;
+  text-transform: uppercase;
+  background-color: $grass-green;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

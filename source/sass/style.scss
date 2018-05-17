@@ -1,9 +1,6 @@
-@import "blocks/about";
 @import "blocks/btn";
-@import "blocks/clients";
-@import "blocks/contacts";
+@import "blocks/contacts-form";
 @import "blocks/features";
-@import "blocks/gallery";
 @import "blocks/logo-grid";
 @import "blocks/main-menu";
 @import "blocks/main-nav";
@@ -11,13 +8,10 @@
 @import "blocks/page-header";
 @import "blocks/picture-grid";
 @import "blocks/portfolio";
-@import "blocks/contacts";
-@import "blocks/promo";
-@import "blocks/section-header";
+@import "blocks/posts";
+@import "blocks/section";
 @import "blocks/slider";
 @import "blocks/social";
-@import "blocks/subject";
+@import "blocks/tag";
 @import "blocks/team";
-@import "blocks/testimonials";
-@import "global.scss";
-
+@import "global";

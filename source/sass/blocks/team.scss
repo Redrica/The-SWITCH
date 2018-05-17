@@ -1,42 +1,37 @@
-@import "../variables";
-@import "../mixins";
-
 .team {
-  position: relative;
-  background-color: $green-light;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+  margin-bottom: 90px;
+  list-style: none;
+}
 
-  &::after {
-    position: absolute;
-    bottom: 0;
+.team__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25px;
+
+  &::before {
     content: "";
-    width: 100%;
-    height: 92px;
-    background-color: $grass-green-light;
-  }
-
-  & .section-header__title::after {
+    display: block;
+    width: 2px;
+    height: 77px;
+    margin: 10px 0;
     background-color: $dark-green;
   }
 }
 
-.team__wrapper {
-  @include wrapper;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 35px $side-padding 25px;
+.team__image {
+  order: -1;
+  display: block;
+  border-radius: 50%;
 }
 
-.team__header {
-  margin-bottom: 51px;
-
-  & .section-header__title {
-    color: $dark-green;
-  }
-
-  & .section-header__subtitle {
-    color: $grass-green;
-  }
+.team__name {
+  @include text($proxima, 16px, 400, $white);
+  text-align: center;
+  margin-bottom: 9px;
 }
 
 .team__link {
