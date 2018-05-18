@@ -21,15 +21,38 @@
   position: absolute;
   top: 6px;
   left: 13px;
+  transition-property: font-size, left;
+  transition-duration: 0.2s, 0.25s;
+  transition-timing-function: linear;
+  transition-delay: 0.5s, 0s;
+
+  &--active {
+    top: 5px;
+    left: -54px;
+    width: 47px;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: right;
+    transition-property: font-size, left;
+    transition-duration: 0.2s, 0.25s;
+    transition-timing-function: linear;
+    transition-delay: 0s, 0.5s;
+  }
 }
 
 .contacts-form__input {
+  @include text($proxima, 14px, 400, $gray-middle);
   width: 100%;
   margin-bottom: 2px;
   padding: 8px 13px 6px;
   background-color: $gray-middle-dark;
   border: none;
   resize: none;
+
+  &:focus {
+    background-color: transparentize($gray-middle-dark, 0.4);
+    outline: none;
+  }
 }
 
 .contacts-form__submit {

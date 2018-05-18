@@ -1,0 +1,14 @@
+.footer {
+  padding: 9px 0;
+  text-align: center;
+  background-color: $black-almost;
+}
+
+.footer__copyright {
+  @include text($proxima, 16px, 400, $white);
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}

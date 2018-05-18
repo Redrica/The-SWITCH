@@ -51,6 +51,11 @@
     flex-basis: (100% / 3);
     //padding: 0 $column-gap 0 43px;
   }
+
+  &--seen {
+    padding: 25px 0 29px;
+    background-color: $gray-darkest;
+  }
 }
 
 .section__wrapper {
@@ -96,6 +101,18 @@
       width: 30px;
       margin: 2px 0 0;
       background-color: $gray-light;
+    }
+  }
+
+  &--seen {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: $black-almost;
+
+    &::after {
+      width: 30px;
+      margin: 2px 0 0;
+      background-color: $black-almost;
     }
   }
 }

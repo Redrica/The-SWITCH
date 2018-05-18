@@ -1,12 +1,9 @@
-//@import "../variables";
-//@import "../mixins";
-
 .logo-grid {
   @include list;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  flex-basis: 100%;
+  width: 100%;
   padding: 0 80px;
 }
 
@@ -15,8 +12,12 @@
   justify-content: center;
   align-items: center;
   flex-basis: 200px;
-  margin: 29px $column-gap 0;
   font-size: 0;
+
+  &--clients {
+    margin: 29px $column-gap 0;
+
+  }
 }
 
 @keyframes scale {
