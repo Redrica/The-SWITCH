@@ -35,7 +35,12 @@
 }
 
 .team__link {
-  z-index: 10;
-  background-color: $green-light;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  &.btn {
+    z-index: 10;
+    padding: 10px 24px;
+    font-size: 19px;
+    font-weight: 300;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
 }

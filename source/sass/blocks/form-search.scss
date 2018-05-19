@@ -1,0 +1,33 @@
+.form-search {
+  position: relative;
+}
+
+.form-search__label {
+  @include text($proxima, 16px, 300, $black-almost);
+  position: absolute;
+  top: 4px;
+  left: 14px;
+}
+
+.form-search__input {
+  padding: 5px 12px;
+  background-color: transparentize($white, 0.2);
+  border: none;
+  border-radius: 13px;
+}
+
+.form-search__submit {
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  width: 27px;
+  height: 27px;
+  background: transparent url("../../img/search.png") no-repeat center center;
+  border: none;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}

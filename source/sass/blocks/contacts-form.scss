@@ -56,10 +56,16 @@
 }
 
 .contacts-form__submit {
+  @include text($proxima, 14px, 400, $white);
   padding: 8px 0;
   text-transform: uppercase;
   background-color: $grass-green;
   border: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+
+  &:hover,
+  &:focus {
+    background-color: darken($grass-green, 10);
+  }
 }

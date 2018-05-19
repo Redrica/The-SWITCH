@@ -2,12 +2,13 @@
 //@import "../mixins";
 
 .page-header {
-  background-image: url("../../img/background-full.jpg");
+  background-image: url("../img/background-full.jpg");
   background-repeat: no-repeat;
   background-position: center 70%;
   background-size: cover;
   background-color: $milk-chocolate;
 }
+
 .page-header__wrapper {
   @include wrapper;
   display: flex;
@@ -40,9 +41,20 @@
 }
 
 .page-header__scroll {
+  position: relative;
   @include text($proxima, 16px, 300, $black-almost);
   margin: 0 auto;
   padding: 5px 32px 4px 11px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 12px;
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    content: "";
+    width: 7px;
+    height: 10px;
+    background: url("../img/arrow-down.svg") no-repeat center center;
+  }
 }
